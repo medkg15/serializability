@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serializability.Analysis
 {
-	public class DependencyGraphBuilder
+	public class DependencyGraphBuilder : IDependencyGraphBuilder
 	{
 		private readonly IStepPairInspector _pairInspector;
 

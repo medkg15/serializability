@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Serializability
 {
+	/// <summary>
+	/// Represents a transaction, which consists of a series of steps.
+	/// </summary>
 	public class Transaction
 	{
 		public Transaction()

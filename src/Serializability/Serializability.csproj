@@ -42,21 +42,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analysis\AllStepPairInspector.cs" />
+    <Compile Include="Analysis\CachingDependencyGraphBuilder.cs" />
     <Compile Include="Analysis\DependencyGraphBuilder.cs" />
-    <Compile Include="Analysis\DependencyGraphScheduleAnalyzer.cs" />
+    <Compile Include="Analysis\DependencyGraphSerializabilityAnalyzer.cs" />
     <Compile Include="Analysis\DependencyGraphNode.cs" />
     <Compile Include="Analysis\DepthFirstCycleChecker.cs" />
     <Compile Include="Analysis\ICycleChecker.cs" />
+    <Compile Include="Analysis\IDependencyGraphBuilder.cs" />
     <Compile Include="Analysis\IStepPairInspector.cs" />
     <Compile Include="Analysis\TransactionStepPair.cs" />
-    <Compile Include="IScheduleAnalyzer.cs" />
+    <Compile Include="Generation\DependencyGraphSerialScheduleGenerator.cs" />
+    <Compile Include="Generation\ISerialScheduleGenerator.cs" />
+    <Compile Include="ISerializabilityAnalyzer.cs" />
     <Compile Include="IScheduleInput.cs" />
-    <Compile Include="MockScheduleInput.cs" />
+    <Compile Include="Parsing\IStringScheduleParser.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schedule.cs" />
-    <Compile Include="ScheduleParser.cs" />
+    <Compile Include="Parsing\ScheduleParser.cs" />
     <Compile Include="StringScheduleInput.cs" />
     <Compile Include="Transaction.cs" />
     <Compile Include="TransactionStep.cs" />
