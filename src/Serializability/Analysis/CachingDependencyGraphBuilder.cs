@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Serializability.Analysis
 {
-	class CachingDependencyGraphBuilder : IDependencyGraphBuilder
+	public class CachingDependencyGraphBuilder : IDependencyGraphBuilder
 	{
 		private readonly IDependencyGraphBuilder _builder;
 		private readonly IDictionary<Schedule, IEnumerable<DependencyGraphNode>> _dictionary; 

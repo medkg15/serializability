@@ -10,7 +10,7 @@ namespace Serializability
 	/// <summary>
 	/// Provides a Schedule based on a string, which will be parsed into a schedule with the given parser.
 	/// </summary>
-	class StringScheduleInput : IScheduleInput
+	public class StringScheduleInput : IScheduleInput
 	{
 		private readonly ScheduleParser _parser;
 		private readonly string _input;
